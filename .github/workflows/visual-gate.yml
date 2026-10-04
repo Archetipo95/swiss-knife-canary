@@ -11,7 +11,7 @@ permissions:
 jobs:
   gate:
     if: github.event.workflow_run.event == 'pull_request'
-    uses: Archetipo95/storybook-github-swiss-knife/.github/workflows/visual-gate.yml@e7c3bff6dd76dc162c8f4d8c1e7a9bf15bd340e1
+    uses: Archetipo95/storybook-github-swiss-knife/.github/workflows/visual-gate.yml@699c54b46da52c25cc2ff52a883a5a8c769d8625
     permissions:
       actions: read
       checks: write
@@ -20,4 +20,7 @@ jobs:
       pull-requests: write
     with:
       caller_workflow: .github/workflows/visual.yml
-      protected_paths: .storybook/swiss-knife.json
+      # The capture settings are read from the pull request: keep them as reviewed on the base.
+      protected_paths: '.storybook/swiss-knife.json'
+    secrets:
+      passcode_hash: ${{ secrets.STORYBOOK_PREVIEW_PASSCODE_HASH }}

@@ -4,7 +4,7 @@ on:
   pull_request:
     types: [opened, synchronize, reopened, labeled, unlabeled]
   push:
-    branches: [main]
+    branches: ['main']
 
 # Label events get their own group, so a label never cancels a comparison.
 concurrency:
@@ -18,7 +18,7 @@ permissions:
 
 jobs:
   visual:
-    uses: Archetipo95/storybook-github-swiss-knife/.github/workflows/visual.yml@e7c3bff6dd76dc162c8f4d8c1e7a9bf15bd340e1
+    uses: Archetipo95/storybook-github-swiss-knife/.github/workflows/visual.yml@699c54b46da52c25cc2ff52a883a5a8c769d8625
     permissions:
       contents: read
       actions: read

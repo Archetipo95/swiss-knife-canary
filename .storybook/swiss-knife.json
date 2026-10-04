@@ -1,9 +1,19 @@
 {
+  "$schema": "https://raw.githubusercontent.com/Archetipo95/storybook-github-swiss-knife/699c54b46da52c25cc2ff52a883a5a8c769d8625/schema/swiss-knife.schema.json",
   "visual": {
-    "fixedTime": "2026-01-15T10:00:00Z",
-    "baselineBranches": ["main"]
+    "baselineBranches": [
+      "main"
+    ],
+    "approvalLabel": "visual-approved",
+    "fixedTime": "2026-01-15T10:00:00Z"
   },
   "a11y": {
-    "enforcedRules": ["image-alt"]
+    "blockingImpacts": [
+      "critical",
+      "serious"
+    ],
+    "enforcedRules": [
+      "image-alt"
+    ]
   }
 }
