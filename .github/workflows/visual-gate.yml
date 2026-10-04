@@ -1,0 +1,23 @@
+name: Visual Gate
+
+on:
+  workflow_run:
+    workflows: ['Visual']
+    types: [completed]
+
+permissions:
+  contents: read
+
+jobs:
+  gate:
+    if: github.event.workflow_run.event == 'pull_request'
+    uses: Archetipo95/storybook-github-swiss-knife/.github/workflows/visual-gate.yml@e7c3bff6dd76dc162c8f4d8c1e7a9bf15bd340e1
+    permissions:
+      actions: read
+      checks: write
+      contents: write
+      issues: write
+      pull-requests: write
+    with:
+      caller_workflow: .github/workflows/visual.yml
+      protected_paths: .storybook/swiss-knife.json

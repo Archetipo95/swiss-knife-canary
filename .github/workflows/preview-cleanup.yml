@@ -1,0 +1,16 @@
+name: PR Preview Cleanup
+
+on:
+  pull_request_target:
+    types: [closed]
+
+permissions:
+  contents: read
+
+jobs:
+  cleanup:
+    uses: Archetipo95/storybook-github-swiss-knife/.github/workflows/pr-preview-cleanup.yml@e7c3bff6dd76dc162c8f4d8c1e7a9bf15bd340e1
+    permissions:
+      contents: write
+      deployments: write
+      pages: write

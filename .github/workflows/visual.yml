@@ -1,0 +1,24 @@
+name: Visual
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, labeled, unlabeled]
+  push:
+    branches: [main]
+
+# Label events get their own group, so a label never cancels a comparison.
+concurrency:
+  group: >-
+    visual-${{ github.event.pull_request.number || github.ref }}-${{
+    (github.event.action == 'labeled' || github.event.action == 'unlabeled') && 'label' || 'code' }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
+permissions:
+  contents: read
+
+jobs:
+  visual:
+    uses: Archetipo95/storybook-github-swiss-knife/.github/workflows/visual.yml@e7c3bff6dd76dc162c8f4d8c1e7a9bf15bd340e1
+    permissions:
+      contents: read
+      actions: read
