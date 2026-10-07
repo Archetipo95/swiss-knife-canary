@@ -10,7 +10,7 @@ permissions:
 
 jobs:
   publish:
-    uses: Archetipo95/storybook-github-swiss-knife/.github/workflows/pr-preview-publish.yml@21dbeff8d8b61efd99348cbf9e31174f11054b88
+    uses: Archetipo95/storybook-github-swiss-knife/.github/workflows/pr-preview-publish.yml@1cbc94b2dce68abb0f980415cf96228490237a6c
     permissions:
       actions: read
       contents: write
