@@ -9,7 +9,7 @@ permissions:
 
 jobs:
   cleanup:
-    uses: Archetipo95/storybook-github-swiss-knife/.github/workflows/pr-preview-cleanup.yml@a85a1d7a21362b55674b1c71fa5d374881e51ecc
+    uses: Archetipo95/storybook-github-swiss-knife/.github/workflows/pr-preview-cleanup.yml@384e4f3d9d4f0e36a11adc49841d6c4b5b30d315
     permissions:
       contents: write
       deployments: write
