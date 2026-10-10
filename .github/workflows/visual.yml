@@ -18,7 +18,7 @@ permissions:
 
 jobs:
   visual:
-    uses: Archetipo95/storybook-github-swiss-knife/.github/workflows/visual.yml@0699ab9fa18ab6de13c926afb7cbc210a0a2a0a5
+    uses: Archetipo95/storybook-github-swiss-knife/.github/workflows/visual.yml@7bf16b2a3afb2ed6053d6be5b0822940bde5d6fe
     permissions:
       contents: read
       actions: read
