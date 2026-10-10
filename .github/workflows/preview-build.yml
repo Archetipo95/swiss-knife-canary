@@ -28,6 +28,6 @@ jobs:
           corepack pnpm install --frozen-lockfile
           corepack pnpm exec storybook build --quiet --output-dir storybook-static
       - name: Package and upload preview bundle
-        uses: Archetipo95/storybook-github-swiss-knife/actions/preview-build@699c54b46da52c25cc2ff52a883a5a8c769d8625
+        uses: Archetipo95/storybook-github-swiss-knife/actions/preview-build@0699ab9fa18ab6de13c926afb7cbc210a0a2a0a5
         with:
           source_path: 'storybook-static'
