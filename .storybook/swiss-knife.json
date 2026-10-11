@@ -1,5 +1,5 @@
 {
-  "$schema": "https://raw.githubusercontent.com/Archetipo95/storybook-github-swiss-knife/35163cb036779f508d2f2bc9ebe775805d15c672/schema/swiss-knife.schema.json",
+  "$schema": "https://raw.githubusercontent.com/Archetipo95/storybook-github-swiss-knife/865c74796c72dec7d9961249106ac9756af5f3c8/schema/swiss-knife.schema.json",
   "visual": {
     "baselineBranches": [
       "main"
