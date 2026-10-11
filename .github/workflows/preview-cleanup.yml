@@ -9,8 +9,10 @@ permissions:
 
 jobs:
   cleanup:
-    uses: Archetipo95/storybook-github-swiss-knife/.github/workflows/pr-preview-cleanup.yml@7bf16b2a3afb2ed6053d6be5b0822940bde5d6fe
+    uses: Archetipo95/storybook-github-swiss-knife/.github/workflows/pr-preview-cleanup.yml@498000eb7dd846067ea73623ff07f0b02c9e6a40
     permissions:
       contents: write
       deployments: write
       pages: write
+      # swiss-knife 0.4.0: the cleanup marks the PR's preview comment as removed.
+      pull-requests: write

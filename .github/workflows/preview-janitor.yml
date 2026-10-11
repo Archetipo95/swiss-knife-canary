@@ -10,9 +10,10 @@ permissions:
 
 jobs:
   janitor:
-    uses: Archetipo95/storybook-github-swiss-knife/.github/workflows/pr-preview-janitor.yml@7bf16b2a3afb2ed6053d6be5b0822940bde5d6fe
+    uses: Archetipo95/storybook-github-swiss-knife/.github/workflows/pr-preview-janitor.yml@498000eb7dd846067ea73623ff07f0b02c9e6a40
     permissions:
       contents: write
       deployments: write
       pages: write
-      pull-requests: read
+      # swiss-knife 0.4.0: the janitor writes the expiry warning in preview comments.
+      pull-requests: write
