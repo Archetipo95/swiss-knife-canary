@@ -27,8 +27,8 @@ importers:
         specifier: 9.1.20
         version: 9.1.20(@testing-library/dom@10.4.2)(vite@7.3.6)
       storybook-swiss-knife:
-        specifier: file:vendor/storybook-swiss-knife-0.1.0.tgz
-        version: file:vendor/storybook-swiss-knife-0.1.0.tgz(storybook@9.1.20(@testing-library/dom@10.4.2)(vite@7.3.6))
+        specifier: file:vendor/storybook-swiss-knife-0.7.0.tgz
+        version: file:vendor/storybook-swiss-knife-0.7.0.tgz(storybook@9.1.20(@testing-library/dom@10.4.2)(vite@7.3.6))
       vite:
         specifier: 7.3.6
         version: 7.3.6
@@ -1275,9 +1275,9 @@ packages:
     resolution: {integrity: sha512-UjgapumWlbMhkBgzT7Ykc5YXUT46F0iKu8SGXq0bcwP5dz/h0Plj6enJqjz1Zbq2l5WaqYnrVbwWOWMyF3F47g==}
     engines: {node: '>=0.10.0'}
 
-  storybook-swiss-knife@file:vendor/storybook-swiss-knife-0.1.0.tgz:
-    resolution: {integrity: sha512-u3aj+xbOFgfqQsg8VDtVtVZSjDBJvXll0Lc316EI0t0W7xz/3swfaGhFS7+3lL2xSb/cCKPvTuG3V82wta5VpA==, tarball: file:vendor/storybook-swiss-knife-0.1.0.tgz}
-    version: 0.1.0
+  storybook-swiss-knife@file:vendor/storybook-swiss-knife-0.7.0.tgz:
+    resolution: {integrity: sha512-gFpAfi5PqQE8gqSMsmb63nOUI4oGdOK0kPfSAhsxerKIMouy0XDVATRdBvNDlGaRIzwvwVNVgsK1EcGkEOYxwQ==, tarball: file:vendor/storybook-swiss-knife-0.7.0.tgz}
+    version: 0.7.0
     hasBin: true
     peerDependencies:
       storybook: '>=8.6.0 <11'
@@ -2486,7 +2486,7 @@ snapshots:
 
   source-map@0.6.1: {}
 
-  storybook-swiss-knife@file:vendor/storybook-swiss-knife-0.1.0.tgz(storybook@9.1.20(@testing-library/dom@10.4.2)(vite@7.3.6)):
+  storybook-swiss-knife@file:vendor/storybook-swiss-knife-0.7.0.tgz(storybook@9.1.20(@testing-library/dom@10.4.2)(vite@7.3.6)):
     dependencies:
       storybook: 9.1.20(@testing-library/dom@10.4.2)(vite@7.3.6)
 
