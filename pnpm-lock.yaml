@@ -1276,7 +1276,7 @@ packages:
     engines: {node: '>=0.10.0'}
 
   storybook-swiss-knife@file:vendor/storybook-swiss-knife-0.7.0.tgz:
-    resolution: {integrity: sha512-gFpAfi5PqQE8gqSMsmb63nOUI4oGdOK0kPfSAhsxerKIMouy0XDVATRdBvNDlGaRIzwvwVNVgsK1EcGkEOYxwQ==, tarball: file:vendor/storybook-swiss-knife-0.7.0.tgz}
+    resolution: {integrity: sha512-NtfYHOMvUXgJ+ZhXP3pytOLN210nhTrtIQL08PBmha4RMYr5uPfukMyKv+vrJ63zXx7OZS90cC/UgP01kOKz+w==, tarball: file:vendor/storybook-swiss-knife-0.7.0.tgz}
     version: 0.7.0
     hasBin: true
     peerDependencies:
