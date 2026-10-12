@@ -11,7 +11,7 @@ permissions:
 jobs:
   gate:
     if: github.event.workflow_run.event == 'pull_request'
-    uses: Archetipo95/storybook-github-swiss-knife/.github/workflows/visual-gate.yml@865c74796c72dec7d9961249106ac9756af5f3c8
+    uses: Archetipo95/storybook-github-swiss-knife/.github/workflows/visual-gate.yml@0be244892b6c2ac5e3bab2a96a309c663ce170df
     permissions:
       actions: read
       checks: write

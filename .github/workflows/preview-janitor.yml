@@ -10,7 +10,7 @@ permissions:
 
 jobs:
   janitor:
-    uses: Archetipo95/storybook-github-swiss-knife/.github/workflows/pr-preview-janitor.yml@865c74796c72dec7d9961249106ac9756af5f3c8
+    uses: Archetipo95/storybook-github-swiss-knife/.github/workflows/pr-preview-janitor.yml@0be244892b6c2ac5e3bab2a96a309c663ce170df
     permissions:
       contents: write
       deployments: write
